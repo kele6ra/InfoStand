@@ -1,0 +1,16 @@
+.as2-apps{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.as2-apps__button{
+    height: 25%;
+    width: 50%;
+    font-size: 100px;
+    cursor: pointer;
+}

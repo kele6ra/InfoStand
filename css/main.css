@@ -1,20 +1,16 @@
-body{
-    max-width: 1080px;
-    max-height: 1920px;
-}
-
 .as2-wrap{
     width: 1080px;
     height: 1920px;
-    outline: 1px black solid;
 }
 
 .as2-wrap__page{
-    height: 1632px;
-    overflow-y: auto;
+    height: 85%;
+    overflow-y: hidden;
     overflow-x: hidden;
+    outline: 1px black solid;
 }
 
 .as2-wrap__navigation{
     height: 15%;
+    outline: 1px black solid;
 }

@@ -1,0 +1,20 @@
+.as2-forecast{
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.as2-forecast__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 14%;
+    font-size: 100px;
+}
+
+.as2-forecast__img{
+    height: 110px;
+}

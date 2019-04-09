@@ -6,9 +6,10 @@ class Home {
     $('.as2-wrap__page').empty();
     this.clockTimerId;
     this.weatherTimerId;
+    this.showHomePage();
   }
 
-  closePage(){
+  closePage() {
     clearTimeout(this.clockTimerId);
     clearTimeout(this.weatherTimerId);
   }
@@ -51,7 +52,7 @@ class Home {
 
     this.weatherTimerId = setTimeout(() => {
       this.weatherTimeout();
-    }, 60000);
+    }, 600000);
   }
 
   showHeader() {
@@ -99,9 +100,9 @@ class Home {
           '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class ="as2-home__img" src="img/sunset.png"></img>' + formatter.format(new Date(data.sys.sunset * 1000));
       }, "json");
 
-      this.weatherTimerId = setTimeout(() => {
+    this.weatherTimerId = setTimeout(() => {
       this.weatherTimeout();
-    }, 60000);
+    }, 600000);
   }
 
 
