@@ -3,19 +3,19 @@ class Forecast {
         this.name = "Forecast";
         $('.as2-wrap__page').empty();
         this.showForecastPage();
-        this.forecatTimerId = 0;
+        this.forecastTimerId = 0;
     }
 
     closePage() {
-
+        clearTimeout(this.forecastTimerId);
     }
 
     showForecastPage() {
         $('.as2-wrap__page').append('<div class="as2-forecast"></div>');
         this.showForecast();
-        this.forecatTimerId = setTimeout(() => {
+        this.forecastTimerId = setTimeout(() => {
             this.forecastTimeout();
-        }, this.getMilisecondsToTomorrow());
+        }, this.getMillisecondsToTomorrow());
     }
 
     forecastTimeout() {
@@ -42,9 +42,9 @@ class Forecast {
                 }
             }, "json");
 
-        this.forecatTimerId = setTimeout(() => {
+        this.forecastTimerId = setTimeout(() => {
             this.forecastTimeout();
-        }, this.getMilisecondsToTomorrow());
+        }, this.getMillisecondsToTomorrow());
     }
 
     showForecast() {
@@ -71,7 +71,7 @@ class Forecast {
             }, "json");
     }
 
-    getMilisecondsToTomorrow() {
+    getMillisecondsToTomorrow() {
         let now = new Date();
         let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
         return (tomorrow - now + 1000);
