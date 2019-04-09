@@ -1,17 +1,47 @@
-.as2-wrap{
+@import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
+
+.as2-main{
+    width: 1080px;
+    height: 1920px;
+    position: relative;
+}
+
+.as2-main::after {
+    content: "";
+    background: url(../img/6-1.png);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+  }
+
+.as2-wrap {
     width: 1080px;
     height: 1920px;
     font-family: 'Tenor Sans', sans-serif;
 }
 
-.as2-wrap__page{
+.ac2-wrap::after {
+    content: "";
+    background: url(../img/6-1.png);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.as2-wrap__page {
     height: 85%;
     overflow-y: hidden;
     overflow-x: hidden;
-    outline: 1px black solid;
 }
 
-.as2-wrap__navigation{
+.as2-wrap__navigation {
     height: 15%;
-    outline: 1px black solid;
 }

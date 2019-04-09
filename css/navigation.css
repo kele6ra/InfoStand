@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    border-top: 5px black solid;
 }
 
 .as2-navigation__column{
@@ -16,7 +17,7 @@
 .as2-navigation__button{
     height: 100%;
     cursor: pointer;
-    outline: 1px black solid;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .as2-navigation__button_small{

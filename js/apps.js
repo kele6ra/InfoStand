@@ -19,8 +19,8 @@ class Apps {
 
     showAppsPage(){
         $('.as2-wrap__page').append('<div class="as2-apps"></div>');
-        $('.as2-apps').append('<button class="as2-apps__button">Home</button>');
-        $('.as2-apps').append('<button class="as2-apps__button">Forecast</button>');
+        $('.as2-apps').append('<button class="as2-apps__button"><img class="as2-apps__buttonImg" src="img/home.svg"></button>');
+        $('.as2-apps').append('<button class="as2-apps__button"><img class="as2-apps__buttonImg" src="img/forecast.svg"></button>');
     }
 
     setButtonsEvents(){
