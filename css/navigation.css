@@ -36,6 +36,7 @@
 
 .as2-button__pageNavigation{
     position: absolute;
+    opacity: 0.1;
     top: 800px;
 }
 
