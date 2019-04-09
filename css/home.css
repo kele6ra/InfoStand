@@ -1,0 +1,40 @@
+.as2-home{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.as2-home__row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1080px;
+    padding: 5px 0;
+}
+
+.as2-home__row_header{
+    font-size: 250px;
+}
+
+.as2-home__row_date{
+    font-size: 150px;
+}
+
+.as2-home__row_time{
+    font-size: 300px;
+}
+
+.as2-home__row_weekday{
+    font-size: 100px;
+}
+
+.as2-home__row_weather{
+    font-size: 100px;
+}
+
+.as2-home__img{
+    height: 100px;
+}
+

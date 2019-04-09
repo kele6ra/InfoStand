@@ -1,0 +1,32 @@
+.as2-navigation{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.as2-navigation__column{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+}
+
+.as2-navigation__smallButton{
+    width: 100%;
+    height: 50%;
+    outline: 1px black solid;
+}
+
+.as2-navigation__button{
+    height: 100%;
+    width: 25%;
+    outline: 1px black solid;
+}
+
+.as2-navigation__bigButton{
+    height: 100%;
+    width: 50%;
+    outline: 1px black solid;
+}

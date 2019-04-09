@@ -8,90 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/navigation.css">
     <script src="js/jquery-3.3.1.min.js"> </script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/main.js"> </script>
+    <script src="js/home.js"> </script>
+    <script src="js/panel.js"> </script>
 </head>
 
 <body>
-    <div class="ac2-wrap">
-        <iframe class="ac2-wrap__hidden" src="http://stream.tvrmogilev.by:8035/live"></iframe>
-        <div class="ac2-wrap_board">
-            <div class="ac2-wrap_top ac2-top">
-                <div class="ac2-top_leftBlock">
-                    <div class="ac2-top_time ac2-text_header ac2-text__bold"> </div>
-                    <div class="ac2-top_date ac2-text_date ac2-text__bold"></div>
-                    <div class="ac2-text ac2-text_common ac2-text__bold">Могилёв</div>
-                    <div class="ac2-top_weather"></div>
-                </div>
-                <div class="ac2-top_rightBlock">
-                    <div class="ac2-top_forecast"> </div>
-                    <div class="ac2-top_forecast"> </div>
-                    <div class="ac2-top_forecast"> </div>
-                    <div class="ac2-top_forecast"> </div>
-                    <div class="ac2-top_forecast"> </div>
-                    <div class="ac2-top_currency">
-                        <div class="ac2-text ac2-text_common ac2-text__bold"> Курсы НБРБ<br /> </div>
-                        <div class="ac2-top_currencyTable"></div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="ac2-wrap_news">
-                <div class="ac2-text ac2-text_header ac2-text__bold">
-                    Новости города
-                </div>
-                <div class="ac2-slider">
-                    <div class="owl-carousel owl-theme ac2-slider_news">
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="ac2-wrap_video">
-                <video class="ac2-video" source src="video/1.mp4" type='video/mp4' muted onended="runNextVideo(this.src)">
-                </video>
-
-            </div>
-            <div class="ac2-wrap_afisha">
-                <div class="ac2-text ac2-text_header ac2-text__bold">
-                    Сегодня в кинотеатрах города
-                </div>
-                <div class="ac2-slider">
-                    <div class="owl-carousel owl-theme ac2-slider_afisha">
-
-                    </div>
-                </div>
-            </div>
-            <div class="ac2-wrap_bottom">
-                <div class="ac2-text ac2-text_header ac2-text__bold">
-                    Партнёры
-                </div>
-                <div class="ac2-images ac2-images_wrap">
-                    <img class="ac2-images_item" src="img/STRIM.png" alt="">
-                    <img class="ac2-images_item" src="img/JSMachine.png" alt="">
-                    <img class="ac2-images_item" src="img/tutby.png" alt="">
-                    <img class="ac2-images_item" src="img/mogilevkino.png" alt="">
-                </div>
-            </div>
-        </div>
+    <div class="as2-wrap">
+        <div class="as2-wrap__page"> </div>
+        <div class="as2-wrap__navigation"> </div>
     </div>
     <script>
-        let video_count = 1;
-        $(document).ready(function () {
-            clock();
-            getWeather();
-            getForecast();
-            getCurrency();
-            parseDataFromMogilevKino();
-            parseDataFromMogilevKinoTimeout();
-            parseDataFromTutBy();
-            parseDataFromTutByTimeout();
-            runNextVideo(0);
-        });
+        let home = new Panel();
     </script>
 </body>
 
