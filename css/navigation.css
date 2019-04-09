@@ -26,3 +26,23 @@
 .as2-navigation__buttonImg{
     height: 80%;
 }
+
+.as2-button{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.as2-button__pageNavigation{
+    position: absolute;
+    top: 800px;
+}
+
+.as2-button__pageNavigation_next{
+    left: 880px;
+}
+
+.as2-button__pageNavigation_prev{
+    left: 50px;
+}
