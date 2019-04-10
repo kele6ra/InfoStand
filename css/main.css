@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 .as2-main{
     width: 1080px;
@@ -21,7 +21,9 @@
 .as2-wrap {
     width: 1080px;
     height: 1920px;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .ac2-wrap::after {

@@ -13,6 +13,7 @@
     width: 50%;
     font-size: 100px;
     cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .as2-apps__buttonImg{
