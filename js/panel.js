@@ -93,8 +93,9 @@ class Panel {
     }
 
     openPage(newPage) {
+        console.log("prevPage:" +  this.prevPage + ", currentPage:" + this.page.name);
         this.prevPage = this.page.name == this.prevPage ? this.prevPage : this.page.name;
-
+        console.log("prevPageAfter:" +  this.prevPage + ", currentPageAfter:" + this.page.name);
         this.page.closePage();
         switch (newPage) {
             case "Home":
@@ -107,6 +108,11 @@ class Panel {
                 break;
             case "Forecast":
                 this.page = new Forecast();
+                this.addPageNavigationButtons();
+                this.makePageNavigationVisible(false);
+                break;
+            case "Game":
+                this.page = new Game();
                 this.addPageNavigationButtons();
                 this.makePageNavigationVisible(false);
                 break;
@@ -126,6 +132,9 @@ class Panel {
                     this.openPage("Forecast");
                     break;
                 case "Forecast":
+                    this.openPage("Game");
+                    break;
+                case "Game":
                     this.openPage("Home");
                     break;
                 default:
@@ -134,10 +143,13 @@ class Panel {
         } else if (pageButton == "prev") {
             switch (this.page.name) {
                 case "Home":
-                    this.openPage("Forecast");
+                    this.openPage("Game");
                     break;
                 case "Forecast":
                     this.openPage("Home");
+                    break;
+                case "Game":
+                    this.openPage("Forecast");
                     break;
                 default:
                     break;
